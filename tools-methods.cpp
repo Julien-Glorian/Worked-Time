@@ -63,7 +63,7 @@ unsigned int timer() {
     }
 
     std::chrono::high_resolution_clock::time_point end = std::chrono::high_resolution_clock::now();
-    return std::chrono::duration_cast<std::chrono::microseconds>(end - start).count() + nbSecondsBeforeBreak;
+    return std::chrono::duration_cast<std::chrono::seconds>(end - start).count() + nbSecondsBeforeBreak;
 }
 
 std::vector<unsigned int> conversion_hours_minutes_seconds(const unsigned int& nbSeconds) {

@@ -6,7 +6,7 @@ EXEC_PROJECT := Worked-Time
 all : $(EXEC_PROJECT)
 	./$(EXEC_PROJECT)
 
-$(EXEC_PROJECT) : worked-time.o
+$(EXEC_PROJECT) : worked-time.o tools-methods.o files-ordery.o
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
 %.o : %.cpp

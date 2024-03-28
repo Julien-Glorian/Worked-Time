@@ -17,11 +17,12 @@ iteration :
 * demand a calculation of all time worked from the beginning or since a certain date
 * because there is limitation of 9h59m59s on a line registered in the file (show below), the max will be 9h, and create other lines for the rest of time worked
 * can specify for each time worked what I've done, not a complete description, just a word which specified the subject
-* demand a calculation of all time worked with a specified word
-* all specify words can be stored in a file to understand what we can do
+* ~~demand a calculation of all time worked with a specified word~~ **iteration 2**
+* ~~all specify words can be stored in a file to understand what we can do~~ useless
 #### Specifications
 * the code will be written in C++
 * the code will execute directly on terminal, I don't need to have interface
+* for the word subject, it must not have space, but no verification will be implemented in iteration 1 because there's no reader file
 
 ### Data structure for file
 
