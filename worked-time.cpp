@@ -1,8 +1,8 @@
 #include <iostream>
 #include <list>
 #include <string>
-#include "tools-methods.hpp"
-#include "files-ordery.hpp"
+#include "useful/tools-methods.hpp"
+#include "useful/files-ordery.hpp"
 
 const std::string WELCOME("Welcome to Worked Time !\nBy Julien Glorian");
 const std::string WHAT_WANT_YOU("What is your next instruction with this list of actions ?");
