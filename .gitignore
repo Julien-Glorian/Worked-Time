@@ -2,3 +2,5 @@ main.exe
 main.cpp
 cmake-build-debug
 .idea
+*.o
+useful/*.o
