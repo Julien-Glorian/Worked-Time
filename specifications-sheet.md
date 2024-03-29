@@ -14,7 +14,7 @@ iteration :
 * have a break during the work but no stopping completely the timer
 * be able to demand worked time when I want
 * when stopping the timer, add the worked time in a file at the end if I want, with the date of the day at end of work
-* demand a calculation of all time worked from the beginning or since a certain date
+* ~~demand a calculation of all time worked from the beginning or since a certain date~~ **iteration 2**
 * because there is limitation of 9h59m59s on a line registered in the file (show below), the max will be 9h, and create other lines for the rest of time worked
 * can specify for each time worked what I've done, not a complete description, just a word which specified the subject
 * ~~demand a calculation of all time worked with a specified word~~ **iteration 2**
@@ -29,3 +29,17 @@ iteration :
 Here is the data structure I think it's the best to register all period of work :  
 **AAAA-MM-DD Hh-MMm-SSs 30MaxCharactersSubjectLikeThis**  
 With this data structure, each period of work is stored on only 52 characters max, so 52 bytes. I can do better, but I want the file to be easily readable.
+
+## Iteration 2
+
+### Functionalities
+
+The iteration 2 has to be more realistic with open-closed project, with the use of design pattern. Here is a list of features that will be implemented at the end of iteration 2 :
+* demand a calculation of all time worked from the beginning or since a certain date
+* demand a calculation of all time worked with a specified word 
+* have at least two languages : English and French
+
+### Code specifications
+
+* the state of the program will be stored via the state design pattern, to have a good start to evolve application
+* the languages will be manage by a template method, to add future language to the program

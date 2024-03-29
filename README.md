@@ -1,5 +1,7 @@
 ## Worked Time
 
+### Code is actually evolving to v2, more information in specifications-sheet
+
 Welcome !
 
 This project has for goal to be able to count time. It will help for many usage 
