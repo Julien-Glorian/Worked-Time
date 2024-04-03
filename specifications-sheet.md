@@ -32,14 +32,31 @@ With this data structure, each period of work is stored on only 52 characters ma
 
 ## Iteration 2
 
+### Major change about program
+The major problem with the v1 is he has to run to count time. But if the computer crashed or the program is accidentally stopped, we lost our timer.  
+More, we only can create one timer at a time, but if we have multitude task to time, it's impossible.
+The two problems has the same solution : creation of a file which contains all the timer started. Each line represents a timer with his date departure.
+
+I also want to improve the experience of use, with using different languages and some settings, like the number of information given by the program (detailed or minimal). The list of settings will also be stored in a file.
+
+All instructions will be in one single word, to gain time each time we've to make a choice.
+
 ### Functionalities
 
-The iteration 2 has to be more realistic with open-closed project, with the use of design pattern. Here is a list of features that will be implemented at the end of iteration 2 :
+The iteration 2 has to be more realistic with open-closed project, with the use of design patterns. Here is a list of features that will be implemented at the end of iteration 2 :
 * demand a calculation of all time worked from the beginning or since a certain date
 * demand a calculation of all time worked with a specified word 
 * have at least two languages : English and French
+* all instructions in one word
+* adjust a timer if we've started to late (by forgetfulness, by impossibility, ...)
 
 ### Code specifications
 
 * the state of the program will be stored via the state design pattern, to have a good start to evolve application
-* the languages will be manage by a template method, to add future language to the program
+* the languages will be manage by a state design pattern, to add future languages to the program
+
+### Necessaries
+To work, the program must have access to three files :
+* **settings.txt** which store all setting
+* **worked-time.txt** which store all the timer terminated
+* **timer.txt** which store all timer currently running
